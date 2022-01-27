@@ -1,0 +1,18 @@
+.socialIcon {
+    display: flex;
+    padding: 2rem 0;
+}
+
+.socialIcon_link {
+    margin-right: 20px;
+    transition: all 0.4s;
+}
+
+.socialIcon_link:hover {
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+
+.socialIcon_icon {
+    width: 32px;
+}

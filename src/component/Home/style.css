@@ -1,0 +1,111 @@
+/* ************************** Profile Section ************************** */
+.aboutWrap {
+    display: flex;
+    width: 100%;
+    background: #000;
+    align-items: center;
+}
+
+.aboutWrap_img {
+    width: 50%;
+}
+
+.aboutWrap_details {
+    width: 40%;
+    color: #fff;
+}
+
+.aboutWrap_details_txt {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* ************************** Videos Section ************************** */
+.videoWrapper {
+    padding: 4rem 8rem;
+}
+
+.videoWrapper_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.videoWrapper_content_video {
+    width: 31.9%;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.videoWrapper_content_video_src {
+    width: 100%;
+    height: 250px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.videoWrapper_content_video:hover {
+    transform: scale(1.06);
+    transition: all 0.4s;
+    border: 1px solid #ccc;
+}
+.videoWrapper_content_video_txt {
+    word-break: break-all;
+}
+.videoWrapper_content_video_detail {
+    padding: 16px;
+    box-sizing: border-box;
+}
+.videoWrapper_content_notfound {
+    text-align: center;
+    width: 100%;
+}
+.videoWrapper_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.videoWrapper_head_serch {
+    padding: 16px 12px;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .aboutWrap {
+        flex-direction: column;
+    }
+    .aboutWrap_img {
+        width: 100%;
+    }
+    .aboutWrap_details {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 16px;
+    }
+    .aboutWrap_details_head {
+        text-align: center;
+    }
+    .socialIcon {
+        width: 100%;
+        justify-content: center;
+    }
+    .videoWrapper {
+        padding: 16px;
+    }
+    .videoWrapper_head {
+        flex-wrap: wrap;
+    }
+    .videoWrapper_head_serch, .videoWrapper_head_txt {
+        width: 100%;
+        text-align: center;
+    }
+    .videoWrapper_content_video {
+        width: 100%;
+        margin-right: 0;
+    }
+}
